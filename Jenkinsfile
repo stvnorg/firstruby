@@ -4,7 +4,7 @@ pipeline {
 		stage('build') {
 			steps {
 				sh "echo 'Hello World!!'"
-				sh "whoami"
+				sh "echo ${whoami}"
 				sh '''#!/bin/bash \ndocker images'''
 			}
 		}
