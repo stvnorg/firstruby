@@ -4,7 +4,8 @@ pipeline {
 		stage('build') {
 			steps {
 				sh "echo 'Hello World!!'"
-				sh "#!/bin/bash \n docker images" 
+				sh "id"
+				sh "#!/bin/bash \ndocker images" 
 			}
 		}
 	}
