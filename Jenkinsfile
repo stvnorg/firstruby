@@ -3,8 +3,8 @@ pipeline {
 	stages { 
 		stage('build') {
 			steps {
+				sh 'export PATH=/usr/local/bin:$PATH'
 				sh "echo 'Hello World!!'"
-				sh "echo whoami"
 				sh '''#!/bin/bash \ndocker images'''
 			}
 		}
