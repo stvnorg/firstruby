@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				sh "echo 'start building...'"
 				sh "/var/lib/jenkins/.rbenv/shims/bundle install"
-				sh "sh "/var/lib/jenkins/.rbenv/shims/gem install rails"
+				sh "/var/lib/jenkins/.rbenv/shims/gem install rails"
 				sh "rails server"
 			}
 		}
