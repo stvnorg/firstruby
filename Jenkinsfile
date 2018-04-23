@@ -4,8 +4,8 @@ pipeline {
 		stage('build') {
 			steps {
 				sh "echo 'start building...'"
-				sh 'bundle install'
-				sh 'rails server'
+				bash "bundle install"
+				bash "rails server"
 			}
 		}
 	}
