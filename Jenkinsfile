@@ -4,7 +4,7 @@ pipeline {
 		stage('build') {
 			steps {
 				sh "echo 'start building...'"
-				sh 'rm -rf /var/lib/gems/2.3.0/cache'
+				sh 'gem install bundler'
 				sh 'bundle install'
 				sh 'rails server'
 			}
