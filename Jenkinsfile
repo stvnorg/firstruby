@@ -4,8 +4,8 @@ pipeline {
 		stage('build') {
 			steps {
 				sh "echo 'start building...'"
-				bash "bundle install"
-				bash "rails server"
+				sh "/var/lib/jenkins/.rbenv/shims/bundle install"
+				sh "rails server"
 			}
 		}
 	}
